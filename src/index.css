@@ -1,0 +1,106 @@
+@font-face {
+  font-family: bebas;
+  src: url("/Bebas_Neue/BebasNeue-Regular.ttf");
+}
+
+:root {
+  font-family: bebas, cursive, Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  position: absolute;
+  inset: 0;
+}
+
+.interface {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  font-family: Bebas, cursive;
+}
+
+/**
+ * Timmer
+ */
+
+.time {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+  font-size: 6vh;
+  background: #00000033;
+  padding-top: 5px;
+  text-align: center;
+}
+
+/**
+ * Restart
+ */
+
+.restart {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+  font-size: 80px;
+  background: #00000033;
+  padding-top: 10px;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+/**
+ * Controls
+ */
+.controls {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  width: 100%;
+}
+
+.controls .raw {
+  display: flex;
+  justify-content: center;
+}
+
+.controls .key {
+  width: 40px;
+  height: 40px;
+  margin: 4px;
+  border: 2px solid #ffffff;
+  background: #ffffff44;
+  pointer-events: all;
+}
+
+.controls .key.large {
+  width: 144px;
+}
+
+.controls .key.active {
+  background: #ffffff99;
+}
