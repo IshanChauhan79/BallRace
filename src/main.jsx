@@ -3,10 +3,10 @@ import ReactDOM from "react-dom/client";
 import { Canvas } from "@react-three/fiber";
 import { KeyboardControls } from "@react-three/drei";
 import { Leva } from "leva";
-import { Perf } from "r3f-perf";
 import App from "./App.jsx";
 import "./index.css";
 import Interface from "./components/Interface.js/index.jsx";
+import Settings from "./components/Settings";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -32,7 +32,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           position: [4, 3, 10],
         }}
       >
-        <Perf position="top-left" />
+        <Settings />
         <App />
       </Canvas>
       <Interface />

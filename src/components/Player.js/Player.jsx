@@ -62,7 +62,6 @@ const Player = () => {
       (value) => {
         if (value) {
           jump();
-          console.log(value);
         }
       }
     );
@@ -74,7 +73,6 @@ const Player = () => {
     const subscribeReset = useGame.subscribe(
       (state) => state.phase,
       (value) => {
-        console.log("phase changes to", value);
         if (value === "ready") reset();
       }
     );

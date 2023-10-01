@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { memo, useMemo } from "react";
 import AxeBlock from "./AxeBlock";
 import DoorBlock from "./DoorBlock";
 import EndBlock from "./EndBlock";
@@ -34,4 +34,4 @@ const Level = ({
   );
 };
 
-export default Level;
+export default memo(Level);

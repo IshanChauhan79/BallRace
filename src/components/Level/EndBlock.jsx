@@ -22,7 +22,7 @@ const EndBlock = ({ position = [0, 0, 0] }) => {
         <primitive object={hamburger.scene} scale={0.2} position-y={0.2} />
       </RigidBody>
       <Text
-        font="./bebas-neue-v9-latin-regular.woff"
+        font="./Bebas_Neue/bebas-neue-v9-latin-regular.woff"
         scale={1}
         position={[0, 2, 2]}
       >
